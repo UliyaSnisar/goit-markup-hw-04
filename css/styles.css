@@ -86,9 +86,12 @@ body{
     display: block;
 
     padding-top: 32px;
-    padding-bottom: 32px;
 
     color: var(--title-color);
+}
+
+.navigation-list-link:not(:first-child){
+    padding-bottom: 32px;
 }
 
 .navigation-list-link:hover,
@@ -98,6 +101,18 @@ body{
 .header-main-link:hover,
 .header-main-link:focus{
     color: var(--acent-color);
+}
+
+.link-after::after{
+    display: block;
+    content: "";
+
+    width: 47px;
+    height: 4px;
+    background: var(--acent-color);
+    border-radius: 2px;
+
+    margin-top: 28px;
 }
 
 .address-menu{
@@ -126,8 +141,21 @@ body{
 /* HERO секция */
 
 .hero{
+    width: 1600px;
+    height: 600px;
+
     padding-top: 200px;
     padding-bottom: 280px;
+    margin: 0 auto;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/hero/heroimg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-title{
@@ -140,7 +168,6 @@ body{
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    background: rgba(47, 48, 58, 0.8);
     color: var(--white-color);
     margin-top: 0;
     margin-bottom: 30px;
@@ -182,19 +209,69 @@ body{
     margin-right: 30px;
 }
 
-.discription-image{
-    width: 70px;
-    height: 70px;
+.antenna-before:before{
+    display: inline-block;
 
-    background: #F5F4FA;
+    content: "";
+
+    width: 270px;
+    height: 120px;
+
+    background: var(--secondary-background-color);
     border-radius: 4px;
-    align-items: center;
+    
+    background-image: url(../images/about-us/antenna.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
-    padding-top: 25px;
-    padding-right: 100px;
-    padding-bottom: 25px;
-    padding-left: 100px;
-    margin-bottom: 30px;
+.clock-before:before{
+    display: inline-block;
+
+    content: "";
+
+    width: 270px;
+    height: 120px;
+
+    background: var(--secondary-background-color);
+    border-radius: 4px;
+    
+    background-image: url(../images/about-us/clock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.diagram-before:before{
+    display: inline-block;
+
+    content: "";
+
+    width: 270px;
+    height: 120px;
+
+    background: var(--secondary-background-color);
+    border-radius: 4px;
+    
+    background-image: url(../images/about-us/diagram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.astronaurt-before:before{
+    display: inline-block;
+
+    content: "";
+
+    width: 270px;
+    height: 120px;
+
+    background: var(--secondary-background-color);
+    border-radius: 4px;
+    
+    background-image: url(../images/about-us/astronaut.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .description-subtitle{
@@ -205,6 +282,7 @@ body{
     text-transform: uppercase;
 
     color: var(--title-color);
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 
@@ -285,6 +363,14 @@ body{
 
 .team-list-item:not(:last-child){
     margin-right: 30px;
+}
+
+.team-list-item{
+    width: 270px;
+    height: 422px;
+    background-color: var(--white-color);
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-image{
@@ -409,6 +495,7 @@ body{
 .footer .caption{
     display: inline-block;
     margin-bottom: 20px;
+    margin-right: 155px;
 }
 
 .footer-social-list{
@@ -418,6 +505,81 @@ body{
 .footer-social-list-item:not(:last-child){
     margin-right: 10px;
 }
+
+.footer-social-link-instagram{
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);;
+
+    background-image: url(../images/footer-social-link/instagram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer-social-link-twitter{
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);;
+
+    background-image: url(../images/footer-social-link/twitter.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.footer-social-link-facebook{
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);;
+
+    background-image: url(../images/footer-social-link/facebook.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.footer-social-list-item-linkedin{
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);;
+
+    background-image: url(../images/footer-social-link/linkedin.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer-social-link-instagram:hover,
+.footer-social-link-twitter:hover,
+.footer-social-link-facebook:hover,
+.footer-social-list-item-linkedin:hover,
+.footer-social-link-instagram:focus,
+.footer-social-link-twitter:focus,
+.footer-social-link-facebook:focus,
+.footer-social-list-item-linkedin:focus{
+    background-color: var(--acent-color);
+}
+
+.btn-after::after{
+    display: inline-block;
+    content: "";
+
+    width: 24px;
+    height: 24px;
+
+    background-image: url(../images/footer-social-link/icon-send.svg);
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
 /* СТИЛИ СТРАНИЧКИ ПОРТФОЛИО */
 
 .filer-list{
@@ -453,8 +615,14 @@ body{
 
 .work-examples-item{
     width: 370px;
+    height: 404px;
+
     margin-right: 30px;
     margin-bottom: 30px;
+
+    background: var(--white-color);
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
 }
 
 .work-examples-item:nth-child(3n){
@@ -473,6 +641,7 @@ body{
 .headline{
     margin-top: 0px;
     margin-bottom: 4px;
+    margin-left: 24px;
 
     font-weight: 700;
     font-size: 18px;
@@ -489,4 +658,7 @@ body{
     letter-spacing: 0.03em;
 
     color: var(--main-color);
+
+    margin-left: 24px;
+    margin-bottom: 20px;
 }
