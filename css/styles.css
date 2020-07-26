@@ -103,7 +103,7 @@ body{
     color: var(--acent-color);
 }
 
-.link-after::after{
+.link-after-studio::after{
     display: block;
     content: "";
 
@@ -141,11 +141,11 @@ body{
 /* HERO секция */
 
 .hero{
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
 
-    padding-top: 200px;
-    padding-bottom: 280px;
+    /* padding-top: 200px;
+    padding-bottom: 280px; */
     margin: 0 auto;
     background-image: linear-gradient(
         to bottom,
@@ -155,7 +155,7 @@ body{
     url(../images/hero/heroimg.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    /* background-size: cover; */
 }
 
 .hero-title{
@@ -171,6 +171,7 @@ body{
     color: var(--white-color);
     margin-top: 0;
     margin-bottom: 30px;
+    padding-top: 200px;
 }
 
 .modal-btn{
@@ -188,7 +189,6 @@ body{
     font-size: 16px;
     line-height: 1.87;
 }
-
 
 /* О нас */
 
@@ -582,6 +582,18 @@ body{
 
 /* СТИЛИ СТРАНИЧКИ ПОРТФОЛИО */
 
+.link-after-portfolio::after{
+    display: block;
+    content: "";
+
+    width: 77px;
+    height: 4px;
+    background: var(--acent-color);
+    border-radius: 2px;
+
+    margin-top: 28px;
+}
+
 .filer-list{
     display: flex;
     justify-content: center;
@@ -661,4 +673,17 @@ body{
 
     margin-left: 24px;
     margin-bottom: 20px;
+}
+
+.btn-after::after{
+    display: inline-block;
+    content: "";
+
+    width: 24px;
+    height: 24px;
+   
+    background-image: url(../images/footer-social-link/icon-send.svg
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
