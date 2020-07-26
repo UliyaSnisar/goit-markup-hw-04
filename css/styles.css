@@ -131,12 +131,42 @@ body{
     padding-bottom: 32px;
 }
 
+.header-main-link:hover .header-main-link-svg,
+.header-main-link:focus .header-main-link-svg,
+.header-tel-link:hover .header-tel-link-svg,
+.header-tel-link:focus .header-tel-link-svg{
+    fill: var(--acent-color)
+}
+
 .header-main-link{
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
     margin-right: 30px;
 }
+
+.header-address-main-link{
+    display: flex;
+    align-items: center;
+}
+
+.header-address-main-tel{
+    display: flex;
+    align-items: center;
+}
+
+.header-main-link-svg{
+    width: 16px;
+    height: 11px;
+    margin-right: 10px;
+}
+
+.header-tel-link-svg{
+    width: 10px;
+    height: 15px;
+    margin-right: 10px;
+}
+
 
 /* HERO секция */
 
@@ -209,69 +239,23 @@ body{
     margin-right: 30px;
 }
 
-.antenna-before:before{
-    display: inline-block;
 
-    content: "";
+.about-us-svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     width: 270px;
     height: 120px;
 
     background: var(--secondary-background-color);
     border-radius: 4px;
-    
-    background-image: url(../images/about-us/antenna.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+    margin-right: 0;
 }
 
-.clock-before:before{
-    display: inline-block;
-
-    content: "";
-
-    width: 270px;
-    height: 120px;
-
-    background: var(--secondary-background-color);
-    border-radius: 4px;
-    
-    background-image: url(../images/about-us/clock.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
-.diagram-before:before{
-    display: inline-block;
-
-    content: "";
-
-    width: 270px;
-    height: 120px;
-
-    background: var(--secondary-background-color);
-    border-radius: 4px;
-    
-    background-image: url(../images/about-us/diagram.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.astronaurt-before:before{
-    display: inline-block;
-
-    content: "";
-
-    width: 270px;
-    height: 120px;
-
-    background: var(--secondary-background-color);
-    border-radius: 4px;
-    
-    background-image: url(../images/about-us/astronaut.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+.discription-list-item-svg{
+    width: 70px;
+    height: 70px;
 }
 
 .description-subtitle{
@@ -403,12 +387,41 @@ body{
 
 .social-list{
     display: flex;
+    justify-content: center;
+    max-width: 270px;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-list-item-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--white-color);
 }
 
 .social-link-item:not(:last-child){
-    margin-right: 10px;
+    margin-right: 22px;
 }
 
+.social-list-item-link-svg{
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+}
+
+.social-list-item-link:hover,
+.social-list-item-link:focus{
+    background-color: var(--acent-color);
+}
+
+.social-list-item-link:hover .social-list-item-link-svg{
+    fill: var(--white-color);
+}
 /* постоянные клиенты */
 
 .customers{
@@ -432,14 +445,55 @@ body{
 
     width: 170px;
     height: 90px;
-    left: 215px;
-    top: 2487px;
 
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
 }
 
+.customer:hover,
+.customer:focus{
+    border: 1px solid var(--acent-color);
+}
+
+.customer-svg{
+    fill: #AFB1B8;;
+}
+
+.logo-1{
+    width: 44px;
+    height: 49px;
+}
+
+.logo-2{
+    width: 40px;
+    height: 52px;
+}
+
+.logo-3{
+    width: 41px;
+    height: 42.5px;
+}
+
+.logo-4{
+    width: 79.6px;
+    height: 42px;
+}
+
+.logo-5{
+    width: 59px;
+    height: 47px;
+}
+
+.logo-6{
+    width: 88.5px;
+    height: 45.4px;
+}
+
+.customer:hover .customer-svg,
+.customer:focus .customer-svg{
+    fill: var(--acent-color);
+}
 /* footer */
 
 .footer{

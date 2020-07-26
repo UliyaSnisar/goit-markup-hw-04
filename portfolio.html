@@ -8,18 +8,18 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-   <!-- панель навигации сайта -->
-   <header class="header">
+ <!-- панель навигации сайта -->
+ <header class="header">
     <div class="container">
         <nav class="navigation">
             <a class="logo" href="./index.html" aria-label="Логотип"> <span class="logo-part">Web</span> Studio</a>
             <ul class="navigation-list list">
                 <li class="navigation-list-item">
-                    <a class="navigation-list-link link" href="./index.html">Студия</a>
+                    <a class="navigation-list-link link-after-studio link" href="./index.html">Студия</a>
                   </li>
 
                 <li class="navigation-list-item">
-                    <a class="navigation-list-link link-after-portfolio link" href="./portfolio.html">Портфолио</a>
+                    <a class="navigation-list-link link" href="./portfolio.html">Портфолио</a>
                   </li>
 
                 <li class="navigation-list-item">
@@ -30,17 +30,24 @@
 
         <address class="header-address">
             <ul class="address-menu list">
-                 
-                <li>
-                    <a class="header-main-link link" href="">info@devstudio.com</a>
+                <li class="header-address-main-link">
+                    <a class="header-main-link link" href="">
+                        <svg class="header-main-link-svg">
+                        <use href="./images/sprite.svg#icon-envelope"></use>
+                        </svg>
+                    info@devstudio.com</a>
                 </li>
-                <li>
-                    <a class="header-tel-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                <li class="header-address-main-tel">                        
+                    <a class="header-tel-link link" href="tel:+380961111111">
+                        <svg class="header-tel-link-svg">
+                        <use href="./images/sprite.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11</a>
                 </li>
             </ul>
         </address>
-    </div>       
-    </header>
+    </div>
+</header>
 
     <main>
         <!-- Портфолио -->
